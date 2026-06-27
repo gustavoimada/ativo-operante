@@ -118,68 +118,6 @@ ProjetoAtivoOperanteVue/
 └── README.md
 ```
 
-## 🚀 Como Executar
-
-### 1. Pré-requisitos
-
-- JDK compatível com o `pom.xml`.
-- PostgreSQL.
-- Node.js e npm.
-
-### 2. Banco de Dados
-
-Crie um banco local:
-
-```powershell
-createdb -U postgres ativooperante
-```
-
-Configure o backend com variáveis de ambiente:
-
-```powershell
-$env:DATABASE_URL="jdbc:postgresql://localhost:5432/ativooperante"
-$env:DATABASE_USERNAME="postgres"
-$env:DATABASE_PASSWORD="sua_senha"
-$env:APP_JWT_SECRET="uma-chave-de-desenvolvimento-com-mais-de-32-caracteres"
-```
-
-O arquivo [backend/.env.example](backend/.env.example) mostra as variáveis esperadas.
-
-### 3. Rodar o Backend
-
-```powershell
-cd backend
-.\mvnw.cmd spring-boot:run
-```
-
-A API sobe em:
-
-```text
-http://localhost:8080
-```
-
-### 4. Rodar o Frontend
-
-Em outro terminal:
-
-```powershell
-cd frontend
-npm install
-npm run serve
-```
-
-O frontend sobe normalmente em:
-
-```text
-http://localhost:8081
-```
-
-Se a API estiver em outra URL, configure:
-
-```powershell
-$env:VUE_APP_API_URL="http://localhost:8080"
-```
-
 ## 🔐 Rotas Principais da API
 
 ### Acesso
@@ -221,13 +159,3 @@ O repositório ignora:
 - configurações locais de IDE
 
 Assim, o GitHub fica focado no que importa: código-fonte, configuração de exemplo e documentação.
-
-## 🔮 Melhorias Futuras
-
-- Hash de senha no cadastro e login.
-- Refresh token ou sessão mais longa.
-- Painel com métricas por tipo de denúncia e órgão.
-- Testes automatizados no backend.
-- Testes de componentes no frontend.
-- Armazenamento externo para imagens.
-- Página pública de acompanhamento por protocolo.
