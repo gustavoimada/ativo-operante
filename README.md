@@ -1,5 +1,16 @@
 # 🏙️ Ativo Operante
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen" />
+  <img src="https://img.shields.io/badge/Frontend-Vue-42b883" />
+  <img src="https://img.shields.io/badge/Backend-Spring%20Boot-6DB33F" />
+  <img src="https://img.shields.io/badge/Language-Java-red" />
+  <img src="https://img.shields.io/badge/Auth-JWT-black" />
+  <img src="https://img.shields.io/badge/ORM-JPA-blue" />
+  <img src="https://img.shields.io/badge/Database-PostgreSQL-336791" />
+  <img src="https://img.shields.io/badge/API-REST-orange" />
+</p>
+
 O **Ativo Operante** é uma aplicação full-stack para registro e acompanhamento de denúncias urbanas. O sistema permite que cidadãos cadastrem ocorrências com tipo, órgão responsável, urgência, descrição e imagens, enquanto administradores acompanham as denúncias, gerenciam cadastros e registram feedbacks.
 
 Este projeto representa uma evolução técnica em relação a projetos mais simples de CRUD, porque combina **frontend em Vue**, **backend Java com Spring Boot**, autenticação por **JWT**, persistência com **JPA/PostgreSQL** e relacionamentos entre entidades.
